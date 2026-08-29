@@ -3,82 +3,78 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="png" href="./me.png" />
+  <link rel="icon" type="image/png" href="./me.png" />
   <title>testsite</title>
   <style>
-    :root{
-     --bg: #120C52;
-     --slate: #3D3573;
-      --text: #232c3b;
+    :root {
+      --bg: #120C52;
+      --slate: #3D3573;
       --text1: #808080;
       --maxw: 1180px;
-      --2: #524896;
       --1: #3D3573;
+      --2: #524896;
     }
-     body{
-       min-height: 100vh;     
-       background-color: var(--bg);
-            color: var(--text1); 
-            margin: 0;
-            font-family: sans-serif;
-       background:
-        radial-gradient(1200px 600px at 15% -10%, rgba(150, 3, 48, 0.16), transparent 60%),
-        linear-gradient(165deg, var(--bg) 0%, var(--slate) 100%);
-        }
+
     html {
       scroll-behavior: smooth;
     }
-          .topbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      max-width: var(--maxw);
-      margin: 0 auto;
-      padding: 22px 24px 0;
-    }
-    .download-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: var(--1);
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-}
 
-.download-btn:hover {
-  background-color: var(2);
-}
-        footer {
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 0;
+      font-family: sans-serif;
+      color: var(--text1);
+      background:
+        radial-gradient(1200px 600px at 15% -10%, rgba(150, 3, 48, 0.16), transparent 60%),
+        linear-gradient(165deg, var(--bg) 0%, var(--slate) 100%);
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      min-height: 60vh;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: var(--1);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: var(--2);
+    }
+
+    footer {
       display: flex;
       justify-content: space-between;
       padding: 1rem 2rem;
-        }
-    main{
-      display:flex;
-      justify-content: center;
-  align-items: center;
-  min-height: 60vh;
-}
-    .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  gap: 16px;          
-}
-    
+    }
   </style>
 </head>
-  <body>
+<body>
     <main>
     <header class="topbar">
       <div class="logo">Download</div>
       <a href="./h.pyw" download class="download-btn">Download File</a>
+      <a href="./pageone.html" class="btn">Go to Next Page</a>
+      <a href="./target-page.html" class="btn">New Button</a>
     </header>
     </main>
   <footer>
     <span></span>
-    <span>V0.10</span>
+    <span>V0.11</span>
   </footer>
 </body>
 </html>
