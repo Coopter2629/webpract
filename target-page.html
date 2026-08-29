@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en">
 <head>
   <title>New page</title>
-  <link rel="icon" type"image/png" href="me.png" />
+  <link rel="icon" type="image/png" href="me.png" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta charset="utf-8" />
   <style>
       :root{
         --bg: #120C52;
         --slate: #3D3573;
-        --text1: #808080;
+        --text: #808080;
         --1: #3D3573;
         --2: #524896;
       }
@@ -17,7 +17,7 @@
         scroll-behavior: smooth;
       }
     body{
-      font-family: san-serif;
+      font-family: sans-serif;
       color: var(--text);
       background:
         radial-gradient(1200px 600px at 15% -10%, rgba(150, 3, 48, 0.16), transparent 60%),
@@ -27,22 +27,22 @@
       position: fixed;
       top: 12px;
       left: 12px;
-      backgournd-color: var(--1);
+      background-color: var(--1);
       color: #ffffff;
       font-weight: bold;
-      justify-content: space-between;
-      text-decpration: none;
+      text-decoration: none;
       padding: 8px 16px;
-      border-radius: 6px
+      border-radius: 6px;
+      display: flex;
     }
     .headbtn:hover{
-      background-color: var(--2)
+      background-color: var(--2);
     }
   </style>
 </head>
   <body>
     <main>
       <a href="./index.html" class="headbtn">Home</a>
-      <a href="https://www.youtube.com/" class="headbtn">Youtube</a>
+      <a href="https://www.youtube.com/" class="headbtn" target="_blank">Youtube</a>
     </main>
   </body>
