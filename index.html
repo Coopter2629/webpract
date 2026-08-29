@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>idgaf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>testsite</title>
   <style>
     :root{
      --bg: #120C52;
      --slate: #3D3573;
+      --text: #232c3b;
     }
      body{
        min-height: 100vh;     
        background-color: var(--bg);
-            color: #733559; 
+            color: var(--text); 
             margin: 0;
             font-family: sans-serif;
        background:
@@ -21,15 +23,28 @@
     html {
       scroll-behavior: smooth;
     }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+    }
   </style>
 </head>
   <body>
     <main>
+      .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 22px 24px 0;
+    }
     </main>
     
   <footer>
     <span>Test site</span>
-    <span>V0.4</span>
+    <span>V0.5</span>
   </footer>
 </body>
 </html>
