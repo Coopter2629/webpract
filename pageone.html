@@ -37,10 +37,62 @@
       .btn:hover {
         background-color: var(--2)
       }
+      .entry-card {
+  background-color: var(--slate);
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 8px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.entry-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.entry-name {
+  color: #ffffff;
+  margin-top: 8px;
+}
     </style>
   </head>
+  <script>
+    function addEntry(name, imageUrl) {
+  // Select the container element
+  const container = document.getElementById('entry-container');
+
+  // Create the main wrapper element for the entry
+  const entryCard = document.createElement('div');
+  entryCard.className = 'entry-card';
+
+  // Create and configure the image element
+  const imgElement = document.createElement('img');
+  imgElement.src = imageUrl;
+  imgElement.alt = name;
+  imgElement.className = 'entry-image';
+
+  // Create and configure the name heading
+  const nameElement = document.createElement('h3');
+  nameElement.textContent = name;
+  nameElement.className = 'entry-name';
+
+  // Append image and name to the entry card
+  entryCard.appendChild(imgElement);
+  entryCard.appendChild(nameElement);
+
+  // Add the new entry card to the container on the page
+  container.appendChild(entryCard);
+}
+
+// Example usage:
+addEntry('Sample Title', './me.png');
+  </script>
   <body>
     <main>
+      <a href="./index.html" class="btn">Home</a>
+  <div id="entry-container"></div>
       <a href="./index.html" class="btn">Home</a>
     </main>
   </body>
