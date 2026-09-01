@@ -23,6 +23,13 @@
           radial-gradient(1200px 600px at 15% -10%, rgba(150, 3, 48, 0.16), transparent 60%),
           linear-gradient(165deg, var(--bg) 0%, var(--slate) 100%);
       }
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+        }
       .btn {
         position: fixed;
         top: 12px;
@@ -54,12 +61,15 @@
         color: #ffffff;
         margin-top: 8px;
       }
+      .hk{
+        margin: 0;
+      }
     </style>
   </head>
   <body>
     <main>
       <a href="./index.html" class="btn">Home</a>
-      <h3>Center test</h3>
+      <h3 class="hk">Center test</h3>
     </main>
   </body>
 </html>
