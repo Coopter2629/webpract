@@ -22,6 +22,9 @@
         background:
           radial-gradient(1200px 600px at 15% -10%, rgba(150, 3, 48, 0.16), transparent 60%),
           linear-gradient(165deg, var(--bg) 0%, var(--slate) 100%);
+        margin: 0;
+        padding: 0;
+        height: 100%;
       }
       main {
         display: flex;
@@ -64,12 +67,24 @@
       .hk{
         margin: 0;
       }
+      .he{
+    position: absolute;
+    top: 20px;
+    left: 50%;        
+    transform: translateX(-50%)
+    color: #ffffff;
+    margin: 0;
+}
     </style>
   </head>
   <body>
     <main>
       <a href="./index.html" class="btn">Home</a>
       <h3 class="hk">Center test</h3>
+      <div class="he">
+        <h1>This should be higher up</h1>
+        <p>Hello (this should be smaller)</p>
+      </div>
     </main>
   </body>
 </html>
