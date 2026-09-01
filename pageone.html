@@ -59,32 +59,7 @@
   <body>
     <main>
       <a href="./index.html" class="btn">Home</a>
-      <div id="entry-container"></div>
+      <h3 position="center">Center test</h3>
     </main>
-
-    <script>
-      function addEntry(name, imageUrl) {
-        const container = document.getElementById('entry-container');
-
-        const entryCard = document.createElement('div');
-        entryCard.className = 'entry-card';
-
-        const imgElement = document.createElement('img');
-        imgElement.src = imageUrl;
-        imgElement.alt = name;
-        imgElement.className = 'entry-image';
-
-        const nameElement = document.createElement('h3');
-        nameElement.textContent = name;
-        nameElement.className = 'entry-name';
-
-        entryCard.appendChild(imgElement);
-        entryCard.appendChild(nameElement);
-        container.appendChild(entryCard);
-      }
-
-      // Call the function to add your entry:
-      addEntry('Sample Title', './me.png');
-    </script>
   </body>
 </html>
